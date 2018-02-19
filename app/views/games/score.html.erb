@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Result</h1>
+  <% if @scenario == 'wrong' %>
+  <p>Sorry but <em><%=@guessed %></em> does not seem to be a valid English word...</p>
+  <% elsif @scenario == 'ko'%>
+  <%  %>
+  <p>Sorry but <%=@guessed %> cannot be built out of <%= @random.split(' ').join(', ') %></p>
+  <% else%>
+  <p>Right!</p>
+  <% end %>
+
+  <%= link_to "Play again", new_path %></p>
+</div>

@@ -1,0 +1,18 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.scrambler{
+  display: flex;
+  justify-content: space-around;
+}
+
+// .scrambler > div{
+//   border: black 1px solid;
+//   height: 30px;
+//   width: 30px;
+// }
+
+.container{
+  margin: 50px;
+}

@@ -1,12 +1,12 @@
 <div class="container">
   <h1>Result</h1>
   <% if @scenario == 'wrong' %>
-  <p>Sorry but <em><%=@guessed %></em> does not seem to be a valid English word...</p>
+  <p>Sorry but <strong><%=@guessed %></strong> does not seem to be a valid English word...</p>
   <% elsif @scenario == 'ko'%>
   <%  %>
-  <p>Sorry but <%=@guessed %> cannot be built out of <%= @random.split(' ').join(', ') %></p>
+  <p>Sorry but <strong><%=@guessed %></strong> cannot be built out of <%= @random.split(' ').join(', ') %></p>
   <% else%>
-  <p>Right!</p>
+<p><strong>Congratulations!</strong> <%=@guessed %> is a valid English word!</p>
   <% end %>
 
   <%= link_to "Play again", new_path %></p>

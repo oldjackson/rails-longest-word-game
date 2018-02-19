@@ -5,13 +5,24 @@
 .scrambler{
   display: flex;
   justify-content: space-around;
+  > div{
+    border: black 1px solid;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    color: white;
+    background-color: #106CD6;
+    font-family: monospace;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    p{
+      margin: 0;
+    }
+  }
 }
-
-// .scrambler > div{
-//   border: black 1px solid;
-//   height: 30px;
-//   width: 30px;
-// }
 
 .container{
   margin: 50px;
